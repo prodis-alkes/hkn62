@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Apps Script with Geolocation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- The allow="geolocation" attribute permits the iframe to request location access -->
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycby6SvhewLH_Uxj-lw-vtCBKDhHscTV6dtfOQchqR-dfWt5eqVoNKrXDkBuHWicm1sZIzg/exec" 
+            allow="geolocation"
+            title="Google Apps Script App">
+        </iframe>
+    </div>
+
+</body>
+</html>
